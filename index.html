@@ -1,9 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- escreva seu codigo aqui -->
+  <div class="container-fluid flex-alignment">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="row">
+          <section class="col-sm-5 image-section">
+            <img src="dog.png" width="100%">
+          </section>
+          <section class="col-sm-7 form-section">
+            <section>
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h1>
+                      Create an Account!
+                    </h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" placeholder="First Name">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="text" placeholder="Email Address">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Password">
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="repeat-password">Repeat Password</label>
+                    <input id="repeat-password" type="password" placeholder="Repeat Password">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <button class="button--primary">Register Account</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <hr>
+            <section>
+              <div class="row">
+                <div class="col-sm-12">
+                  <button class="button--external--google">
+                    <svg
+                      width="20"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M9.001 10.71V7.362h8.424c.126.567.225 1.098.225 1.845 0 5.139-3.447 8.793-8.64 8.793-4.968 0-9-4.032-9-9s4.032-9 9-9c2.43 0 4.464.891 6.021 2.349l-2.556 2.484c-.648-.612-1.782-1.332-3.465-1.332-2.979 0-5.409 2.475-5.409 5.508s2.43 5.508 5.409 5.508c3.447 0 4.716-2.385 4.95-3.798H9.001v-.009z" />
+                    </svg>
+                    Register with Google
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <button class="button--external--facebook">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z" />
+                    </svg>
+                    Register with Facebook
+                  </button>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section>
+              <p>
+                <a href="">Forgot password?</a>
+              </p>
+              <p>
+                <a href="">Already have an account? Login!</a>
+              </p>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>

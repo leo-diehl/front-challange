@@ -1,3 +1,96 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  margin: 80px;
+  background: #486DD8;
+}
+
+.flex-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.content-wrapper {
+  width: 87%;
+  height: 97%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.content, .content .row {
+  height: 100%;
+}
+
+.image-section {
+  background: #ECB008;
+}
+
+.form-section {
+  padding: 70px 88px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+input, button {
+  height: 70px;
+  padding: 0 28px;
+  font-size: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 35px;
+}
+
+input {
+  border-color: #D2D1D7;
+  border: 2px solid #D2D1D7;
+}
+
+button {
+  border: none;
+  color: #FFFFFF;
+}
+
+.button--primary {
+  background-color: #4E73DE;
+}
+
+.button--external--google {
+  background-color: #EA4236;
+}
+
+.button--external--google svg {
+  margin-right: 4px;
+}
+
+.button--external--facebook {
+  background-color: #3A5898;
+}
+
+/*
+  Labels are used for accessibility purposes only
+*/
+label {
+  display: none;
+}
+
+p {
+  text-align: center;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+svg {
+  fill: #FFFFFF;
+  margin-bottom: 2px;
 }
