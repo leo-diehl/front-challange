@@ -1,3 +1,10 @@
+## Comentário sobre a abordagem na resolução do desafio:
+Vendo o trabalho da Mirum imagino que não seja a proposta de vocês entregar páginas soltas para os clientes,
+mas sim pensar no site como um todo para have coerência na identidade visual da aplicação.
+Pensando nisso, estruturei os arquivos de maneira relativamente genérica, pensando que os recursos utilizados
+nessa página de signup muito provavelmente virão de uma base com os estilos de todo o site.
+
+
 ## Envio de projeto
 
 **Intruções** 

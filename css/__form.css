@@ -1,5 +1,5 @@
 .large {
-  font-size: 18px;
+  font-size: 14px;
   width: 100%;
   border-radius: 35px;
 }
@@ -9,11 +9,11 @@
 
 input.large {
   padding: 0 24px;
-  height: 70px;
+  height: 60px;
 }
 
 .input-gray {
-  border: 2px solid #dbdbdb;
+  border: 1px solid #d4d4d4;
   color: #757575;
   transition: border-color .5s;
 }
@@ -41,14 +41,14 @@ input.large {
 
 button.large {
   border: none;
-  height: 62px;
+  height: 50px;
   transition: background-color 0.2s;
 }
 
 .button--primary {
   color: rgba(255, 255, 255, .93);
   background-color: #4E73DE;
-  height: 66px;
+  height: 54px !important;
 }
 
 .button--primary:hover {

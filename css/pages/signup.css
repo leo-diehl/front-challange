@@ -16,6 +16,8 @@
 .image-section {
   background: #ECB008;
   align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
   display: flex;
   padding-right: 0;
   border-radius: 8px 0 0 8px;
@@ -25,13 +27,67 @@
   margin-left: 14%;
 }
 
+.inner-heading {
+  display: none;
+}
+
+.image-section img {
+  width: 100%;
+}
+
 .form-section {
-  padding: 72px 88px;
+  padding: 56px 87px 56px 72px;
+  overflow-y: auto;
 }
 
 .form__heading {
   text-align: center;
   color: #3B3A3F;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    height: auto;
+  }
+
+  .content-wrapper {
+    margin: 1% 0;
+  }
+
+  .image-section {
+    height: 140px;
+    background-clip: content-box;
+    padding-right: 15px;
+  }
+
+  .image-section__container {
+    margin: 0;
+  }
+
+  .image-section img {
+    width: auto;
+    height: 120px;
+  }
+
+  .inner-heading {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 42px;
+  }
+
+  .inner-heading .form__heading {
+    font-size: 32px;
+  }
+
+  .form-section {
+    padding: 36px 64px 36px 64px;
+  }
+
+  .form-section .form__heading {
+    display: none;
+  }
 }

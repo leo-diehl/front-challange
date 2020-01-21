@@ -18,6 +18,10 @@
   background: linear-gradient(180deg, rgba(77,114,219,1) 0%, rgba(35,70,166,1) 100%);
 }
 
+.has-error {
+  border-color: #d63838 !important;  
+}
+
 
 /* MARGIN-TOP */
 .mt1 {

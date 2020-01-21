@@ -1,18 +1,17 @@
 <!-- Todo:
-  - RESPONSIVENESS
-  - FORM VALIDATION
   - INPUT MASK
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- An input masks' javascript plugin -->
+    <script src="https://unpkg.com/imask"></script>
     <!-- We'll use the bootstrap's grid system to make the page responsive.
       We could do this manually but, as bootstrap is present in nearly all web projects, I used it. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/pages/signup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   </head>
   <body class="blue-background">
     <div class="container-fluid flex-alignment">
@@ -22,8 +21,13 @@
 
             <!-- Image Column -->
             <section class="col-lg-5 image-section">
+              <div class="inner-heading">
+                <h1 class="form__heading mt7">
+                  Create an Account!
+                </h1>  
+              </div>
               <div class="image-section__container">
-                <img src="img/dog.png" width="100%">
+                <img src="images/dog.png" width="100%">
               </div>
             </section>
 
@@ -32,7 +36,7 @@
 
               <!-- Form inputs -->
               <section>
-                <form action="post">
+                <form>
                   <div class="row">
                     <div class="col-sm-12">
                       <h1 class="form__heading mb8">
@@ -41,25 +45,25 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-lg-6">
                       <label for="first-name" class="undisplayed">
                         First Name <!-- Accessibility purposes only -->
                       </label>
                       <input
                         id="first-name"
                         type="text"
-                        class="large input-gray mb6"
+                        class="large input-gray mb5"
                         placeholder="First Name"
                       >
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-lg-6">
                       <label for="phone" class="undisplayed">
                         Phone <!-- Accessibility purposes only -->
                       </label>
                       <input
                         id="phone"
                         type="text"
-                        class="large input-gray mb6"
+                        class="large input-gray mb5"
                         placeholder="Phone"
                       >
                     </div>
@@ -72,31 +76,31 @@
                       <input
                         id="email"
                         type="text"
-                        class="large input-gray mb6"
+                        class="large input-gray mb5"
                         placeholder="Email Address"
                       >
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-lg-6">
                       <label for="password" class="undisplayed">
                         Password <!-- Accessibility purposes only -->
                       </label>
                       <input
                         id="password"
                         type="password"
-                        class="large input-gray mb6"
+                        class="large input-gray mb5"
                         placeholder="Password"
                       >
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-lg-6">
                       <label for="repeat-password" class="undisplayed">
                         Repeat Password <!-- Accessibility purposes only -->
                       </label>
                       <input
                         id="repeat-password"
                         type="password"
-                        class="large input-gray mb6"
+                        class="large input-gray mb5"
                         placeholder="Repeat Password"
                       >
                     </div>
@@ -104,7 +108,8 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <button
-                        class="button--primary large large mb3"
+                        class="button--primary large large mb2"
+                        type="button"
                         onclick="validateBeforeSubmit()"
                       >
                         Register Account
@@ -114,7 +119,7 @@
                 </form>
               </section>
 
-              <hr class="mt3 mb6">
+              <hr class="mt3 mb5">
 
               <!-- External login buttons -->
               <section>
@@ -122,12 +127,12 @@
                   <div class="col-sm-12">
                     <button class="button--external--google large large mb3">
                       <svg
-                        width="20"
+                        width="16"
                         viewBox="0 0 18 18"
                         xmlns="http://ww.w3.org/2000/svg"
                         class="white-fill mb1"
                       >
-                        <path d="M9.001 10.71V7.362h8.424c.126.567.225 1.098.225 1.845 0 5.139-3.447 8.793-8.64 8.793-4.968 0-9-4.032-9-9s4.032-9 9-9c2.43 0 4.464.891 6.021 2.349l-2.556 2.484c-.648-.612-1.782-1.332-3.465-1.332-2.979 0-5.409 2.475-5.409 5.508s2.43 5.508 5.409 5.508c3.447 0 4.716-2.385 495-3.798H9.001v-.09z" />
+                        <path d="M9.001 10.71V7.362h8.424c.126.567.225 1.098.225 1.845 0 5.139-3.447 8.793-8.64 8.793-4.968 0-9-4.032-9-9s4.032-9 9-9c2.43 0 4.464.891 6.021 2.349l-2.556 2.484c-.648-.612-1.782-1.332-3.465-1.332-2.979 0-5.409 2.475-5.409 5.508s2.43 5.508 5.409 5.508c3.447 0 4.716-2.385 4.95-3.798H9.001v-.009z" />
                       </svg>
                       Register with Google
                     </button>
@@ -137,7 +142,7 @@
                   <div class="col-sm-12">
                     <button class="button--external--facebook large large mb3">
                       <svg
-                        width="24"
+                        width="20"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                         class="white-fill mb1"
@@ -150,10 +155,10 @@
                 </div>
               </section>
 
-              <hr class="mt3 mb6">
+              <hr class="mt2 mb5">
 
               <!-- Extra options -->
-              <section class="mt7">
+              <section class="mt5">
                 <p class="centered-text mb1">
                   <a href="">Forgot Password?</a>
                 </p>
@@ -167,5 +172,5 @@
       </div>
     </div>
   </body>
-  <script src="js/index.js" /></script>
+  <script src="js/pages/signup.js"></script>
 </html>
