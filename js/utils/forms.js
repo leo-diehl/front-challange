@@ -50,7 +50,7 @@ function validateField(field) {
 }
 
 /*
- * 
+ * Given the form fields, print their values in an javascript alert box
  */
 function printFormValues(fields) {
   // Getting a string with label and value for each field
