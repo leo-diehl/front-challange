@@ -1,0 +1,37 @@
+.content-wrapper {
+  width: 87%;
+  height: 97%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.content {
+  box-shadow: 0px 0px 20px -10px;
+}
+
+.content, .content .row, .image-section, .form-section {
+  height: 100%;
+}
+
+.image-section {
+  background: #ECB008;
+  align-items: flex-end;
+  display: flex;
+  padding-right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.image-section__container {
+  margin-left: 14%;
+}
+
+.form-section {
+  padding: 72px 88px;
+}
+
+.form__heading {
+  text-align: center;
+  color: #3B3A3F;
+  font-size: 36px;
+  letter-spacing: 0;
+}

@@ -1,0 +1,78 @@
+.large {
+  font-size: 18px;
+  width: 100%;
+  border-radius: 35px;
+}
+
+
+/* Input */
+
+input.large {
+  padding: 0 24px;
+  height: 70px;
+}
+
+.input-gray {
+  border: 2px solid #dbdbdb;
+  color: #757575;
+  transition: border-color .5s;
+}
+
+.input-gray::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9c9c9c;
+  opacity: 1; /* Firefox */
+}
+
+.input-gray:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #9c9c9c;
+}
+
+.input-gray::-ms-input-placeholder { /* Microsoft Edge */
+  color: #9c9c9c;
+}
+
+.input-gray:focus {
+  outline: none;
+  border-color: rgb(77, 144, 254);
+}
+
+
+/* Buttons */
+
+button.large {
+  border: none;
+  height: 62px;
+  transition: background-color 0.2s;
+}
+
+.button--primary {
+  color: rgba(255, 255, 255, .93);
+  background-color: #4E73DE;
+  height: 66px;
+}
+
+.button--primary:hover {
+  background-color: #4566c4;
+}
+
+.button--external--google {
+  color: rgba(255, 255, 255, .93);
+  background-color: #EA4236;
+}
+
+.button--external--google:hover {
+  background-color: #db3e32;
+}
+
+.button--external--google svg {
+  margin-right: 4px;
+}
+
+.button--external--facebook {
+  color: rgba(255, 255, 255, .93);
+  background-color: #3A5898;
+}
+
+.button--external--facebook:hover {
+  background-color: #36538f;
+}
