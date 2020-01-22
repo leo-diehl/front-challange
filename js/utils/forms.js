@@ -19,10 +19,7 @@ function validateField(field) {
     return false;
   }
 
-  console.log(field.label)
-  
   const value = fieldObject.value.trim();
-  console.log(value)
 
   let valid = true;
 
